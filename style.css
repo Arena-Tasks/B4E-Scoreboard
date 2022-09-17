@@ -21,12 +21,13 @@
 ::-webkit-scrollbar{
     width: 10px;
     background-color: transparent;
-    scrollbar-width: thin;
+    /* scrollbar-width : unset; */
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--clr-aqua);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    scrollbar-width: 50px;
 }
 
 ::-webkit-scrollbar-track{
@@ -87,3 +88,13 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 1281px) {
+    .table_container_div table th {
+      font-size:  1.0599rem;
+    }
+  }
+
+  h3{
+    text-align: center;
+  }
